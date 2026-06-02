@@ -1,0 +1,154 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# llm-eval .gitignore
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Secrets & local environment ───────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.envrc
+*.pem
+*.key
+*.secret
+secrets.json
+# Keep an example template visible:
+!.env.example
+
+# ── Python virtualenv (this project root is the venv root) ────────────────────
+bin/
+lib/
+lib64
+share/
+include/
+Include/
+Scripts/
+pyvenv.cfg
+
+# ── Python bytecode and build artifacts ───────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+.installed.cfg
+dist/
+build/
+sdist/
+wheels/
+*.manifest
+*.spec
+MANIFEST
+
+# ── Test, coverage, and type-check caches ─────────────────────────────────────
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.dmypy.json
+dmypy.json
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+nosetests.xml
+.hypothesis/
+
+# ── Generated HTML reports (regenerated on every test run) ────────────────────
+reports/*.html
+# Uncomment to commit a sample report for screenshots / README:
+#!reports/sample_layer1_metrics.html
+
+# ── Performance baseline is kept (it IS the reference for regression) ─────────
+# data/perf_baseline.json — explicitly NOT ignored
+
+# ── MLflow tracking artifacts (Layer 2.5) ─────────────────────────────────────
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ── DeepEval local cache & telemetry ──────────────────────────────────────────
+.deepeval/
+
+# ── LangChain / LangSmith caches ──────────────────────────────────────────────
+.langchain.db
+.langsmith_cache/
+
+# ── NLTK data (downloaded to ~/nltk_data; ignore if anyone keeps it local) ────
+nltk_data/
+
+# ── HuggingFace / transformers cache (used by BERTScore) ──────────────────────
+.cache/
+.cache/huggingface/
+transformers_cache/
+
+# ── Jupyter notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_meta
+
+# ── Node.js (used by docs/ build script) ──────────────────────────────────────
+docs/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# Generated PDFs from docx-to-PDF previews:
+docs/*.pdf
+
+# ── IDE / editor configuration ────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ── Claude Code / local AI tooling ────────────────────────────────────────────
+.claude/settings.local.json
+.claude/local/
+.claude/cache/
+# Keep .claude/launch.json — needed for the preview server config
+
+# ── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Temp / scratch ────────────────────────────────────────────────────────────
+tmp/
+temp/
+scratch/
+.scratch/
+*.tmp
+*.bak
+*.orig
+
+# ── Personal notes (uncomment if you keep them local) ─────────────────────────
+libraries.txt
