@@ -1,0 +1,56 @@
+[
+  {
+    "id": "q001",
+    "question": "What is the return window?",
+    "reference": "You can return items within 30 days of purchase.",
+    "context": "Return policy: 30 days from purchase date.",
+    "retrieved_contexts": ["Refunds and returns are valid within 30 days of the purchase date."],
+    "category": "returns",
+    "min_rouge_l": 0.35
+  },
+  {
+    "id": "q002",
+    "question": "How long does standard shipping take?",
+    "reference": "Standard shipping takes 3-5 business days and is free on orders over $50.",
+    "context": "Shipping: standard 3-5 days free over $50, express 1-2 days $12.99.",
+    "retrieved_contexts": ["Standard shipping takes 3-5 business days and is free on orders over $50. Express shipping is 1-2 business days for $12.99."],
+    "category": "shipping",
+    "min_rouge_l": 0.30
+  },
+  {
+    "id": "q003",
+    "question": "Can I get a refund after 60 days?",
+    "reference": "Our policy allows refunds within 30 days of purchase only. After 60 days, refunds are not available.",
+    "context": "Return window is strictly 30 days.",
+    "retrieved_contexts": ["The return window is strictly 30 days from the purchase date. No refunds are accepted after this period."],
+    "category": "returns",
+    "min_rouge_l": 0.10
+  },
+  {
+    "id": "q004",
+    "question": "How do I track my order?",
+    "reference": "Use the tracking link in your order confirmation email to track your shipment.",
+    "context": "Order tracking available via link in confirmation email.",
+    "retrieved_contexts": ["Order tracking is available via the tracking link included in your order confirmation email."],
+    "category": "orders",
+    "min_rouge_l": 0.30
+  },
+  {
+    "id": "q005",
+    "question": "How much does express shipping cost?",
+    "reference": "Express shipping costs $12.99 and delivers in 1-2 business days.",
+    "context": "Express shipping: 1-2 business days, $12.99.",
+    "retrieved_contexts": ["Express shipping is available for $12.99 and delivers within 1-2 business days."],
+    "category": "shipping",
+    "min_rouge_l": 0.30
+  },
+  {
+    "id": "q006",
+    "question": "How do I contact support?",
+    "reference": "You can reach support at support@shopeasy.com or call 1-800-555-0199.",
+    "context": "Contact: support@shopeasy.com or 1-800-555-0199.",
+    "retrieved_contexts": ["Customer support is available at support@shopeasy.com or by phone at 1-800-555-0199."],
+    "category": "support",
+    "min_rouge_l": 0.30
+  }
+]
