@@ -405,8 +405,8 @@ provider-agnostic.
 
 For each layer, a detailed companion `.docx` walkthrough lives in `docs/`:
 
-- `docs/Layer1_Unit_Testing_Implementation.docx` — Layer 1 deep dive (this one's published first)
-- `docs/Layer2_LLM_Judge_Implementation.docx` — *coming next*
+- `docs/Layer1_Unit_Testing_Implementation.docx` — Layer 1 deep dive ✅ published
+- `docs/Layer2_LLM_Judge_Implementation.docx` — Layer 2 deep dive ✅ published
 - `docs/Layer3_Human_Evaluation.docx` — *coming*
 - `docs/Layer4_Agent_Testing.docx` — *coming*
 - `docs/Layer5_Security_Red_Teaming.docx` — *coming*
